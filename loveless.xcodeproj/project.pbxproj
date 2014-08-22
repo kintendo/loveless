@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4CC746219A6E4CA0099DF30 /* tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CC746119A6E4CA0099DF30 /* tile.swift */; };
 		C4E2AC98194A38ED00496AE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E2AC97194A38ED00496AE7 /* AppDelegate.swift */; };
 		C4E2AC9A194A38ED00496AE7 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C4E2AC99194A38ED00496AE7 /* GameScene.sks */; };
 		C4E2AC9C194A38ED00496AE7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E2AC9B194A38ED00496AE7 /* GameScene.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4CC746119A6E4CA0099DF30 /* tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tile.swift; sourceTree = "<group>"; };
 		C4E2AC92194A38ED00496AE7 /* loveless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loveless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E2AC96194A38ED00496AE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4E2AC97194A38ED00496AE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				C4E2AC9F194A38ED00496AE7 /* Main.storyboard */,
 				C4E2ACA2194A38ED00496AE7 /* Images.xcassets */,
 				C4E2AC95194A38ED00496AE7 /* Supporting Files */,
+				C4CC746119A6E4CA0099DF30 /* tile.swift */,
 			);
 			path = loveless;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				C4E2AC9C194A38ED00496AE7 /* GameScene.swift in Sources */,
 				C4E2AC9E194A38ED00496AE7 /* GameViewController.swift in Sources */,
 				C4E2AC98194A38ED00496AE7 /* AppDelegate.swift in Sources */,
+				C4CC746219A6E4CA0099DF30 /* tile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

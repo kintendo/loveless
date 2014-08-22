@@ -10,20 +10,28 @@ import SpriteKit
 
 class GameScene: SKScene {
     
-    let tile = SKSpriteNode(imageNamed:"grass")
+    let gridRows = 5
+    let gridCols = 4
+    let grid = [[]]
+    let tileSize = 40
     
     override func didMoveToView(view: SKView) {
-        //tile.size = CGSizeMake(CGFloat(20), CGFloat(5))
         
-//        var grid: SKSpriteNode[][] = [[self.tile, self.tile],[self.tile, self.tile]]
-                var grid: SKSpriteNode[][] = [[self.tile],[self.tile]]
-
-        for row in grid {
-            for item in row {
-                item.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))
-                self.addChild(item)
+        //SKSpriteNode(imageNamed:"grass")
+        
+        for col in 1...gridCols {
+            for row in 1...gridRows {
+                var tile = SKSpriteNode(imageNamed:"grass")
+                tile.size = CGSizeMake(CGFloat(tileSize), CGFloat(tileSize))
+                tile.position = CGPointMake(
+                    CGRectGetMidX(self.frame) + CGFloat(tileSize * col),
+                    CGRectGetMidY(self.frame) + CGFloat(tileSize * row)
+                )
+                self.addChild(tile)
+//                grid[col][row] = tile
             }
         }
+
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
