@@ -11,10 +11,6 @@ import SpriteKit
 class GameScene: SKScene {
     
     
-
-    let gridRows = 9
-    let gridCols = 5
-    var grid = [[]]
     let tileSize = 64
     var planeX = 0
     var planeY = 0
@@ -28,17 +24,11 @@ class GameScene: SKScene {
         self.anchorPoint = CGPointMake(0,0)
         //SKSpriteNode(imageNamed:"grass")
         
-        for col in 0...(gridCols-1) {
-            for row in 0...(gridRows-1) {
-                var tile = SKSpriteNode(imageNamed:"grass")
-                tile.size = CGSizeMake(CGFloat(tileSize), CGFloat(tileSize))
-                tile.position = CGPointMake(
-                    CGRectGetMinX(self.frame) + CGFloat(tileSize/2) + CGFloat(tileSize * col),
-                    CGRectGetMinY(self.frame) + CGFloat(tileSize/2) + CGFloat(tileSize * row)
-                )
-                self.addChild(tile)
-            }
-        }
+        var sceneMap: Map
+        
+        sceneMap = Map(rows: 9, cols: 5, tileSize: 64)
+        
+        sceneMap.drawMap(self)
 
         plane.size = CGSizeMake(CGFloat(tileSize*3/4), CGFloat(tileSize*3/4))
         
