@@ -12,4 +12,6 @@ import SpriteKit
 class Tile {
     var score = 0
     var location = CGPointZero
+    var hasCharacter = false
+    var currentCharacter = Character()
 }
