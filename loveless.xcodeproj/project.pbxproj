@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F1B60FD19B04CAE00A980E1 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1B60FC19B04CAE00A980E1 /* Character.swift */; };
+		8F1B60FF19B0553B00A980E1 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1B60FE19B0553B00A980E1 /* Map.swift */; };
 		C4CC746219A6E4CA0099DF30 /* tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CC746119A6E4CA0099DF30 /* tile.swift */; };
 		C4E2AC98194A38ED00496AE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E2AC97194A38ED00496AE7 /* AppDelegate.swift */; };
 		C4E2AC9A194A38ED00496AE7 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C4E2AC99194A38ED00496AE7 /* GameScene.sks */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		8F1B60FC19B04CAE00A980E1 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		8F1B60FE19B0553B00A980E1 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		C4CC746119A6E4CA0099DF30 /* tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tile.swift; sourceTree = "<group>"; };
 		C4E2AC92194A38ED00496AE7 /* loveless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loveless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E2AC96194A38ED00496AE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				C4E2ACA2194A38ED00496AE7 /* Images.xcassets */,
 				C4E2AC95194A38ED00496AE7 /* Supporting Files */,
 				C4CC746119A6E4CA0099DF30 /* tile.swift */,
+				8F1B60FE19B0553B00A980E1 /* Map.swift */,
 			);
 			path = loveless;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				C4E2AC9E194A38ED00496AE7 /* GameViewController.swift in Sources */,
 				8F1B60FD19B04CAE00A980E1 /* Character.swift in Sources */,
 				C4E2AC98194A38ED00496AE7 /* AppDelegate.swift in Sources */,
+				8F1B60FF19B0553B00A980E1 /* Map.swift in Sources */,
 				C4CC746219A6E4CA0099DF30 /* tile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

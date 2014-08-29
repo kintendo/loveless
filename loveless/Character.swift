@@ -9,5 +9,19 @@
 import SpriteKit
 
 class Character {
+    var isTurnComplete: Bool
+    var maxMoves: Int
+    
+    init(){
+        maxMoves = 0;
+        isTurnComplete = false;
+    }
+    
+    init(maxMoves: Int, currentTile: Tile){
+        self.maxMoves = maxMoves
+        self.isTurnComplete = false;
+    }
+    
+
     
 }
