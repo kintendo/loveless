@@ -10,8 +10,35 @@ import Foundation
 import SpriteKit
 
 class Tile {
-    var score = 0
-    var location = CGPointZero
-    var hasCharacter = false
-    var currentCharacter = Character()
+    
+
+    
+    var currentCharacter:Character? = nil
+    var location:CGPoint? = nil
+    var background = SKSpriteNode()
+    var selectLayer = SKSpriteNode()
+    
+    init(texture: SKTexture, size: CGSize, position: CGPoint) {
+        background.texture = texture
+        background.size = size
+        background.position = position
+    }
+
+    func hasCharacter() -> Bool {
+        return currentCharacter != nil
+    }
+    
+    func setPosition(position: CGPoint) {
+        background.position = position
+    }
+    
+    func selectTile () {
+        //selects the tile
+        selectLayer.color = SKColor.blueColor()
+        selectLayer.position = background.position
+    }
+    
+    func clearTileSelect () {
+        //unselects the tile
+    }
 }

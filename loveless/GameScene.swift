@@ -15,13 +15,16 @@ class GameScene: SKScene {
     var planeX = 0
     var planeY = 0
     var plane = SKSpriteNode(imageNamed: "Spaceship")
+
+    var test2 = SKSpriteNode(color: UIColor.blueColor(), size: CGSizeMake(CGFloat(32), CGFloat(32)))
     
     override func didMoveToView(view: SKView) {
     
 
         self.scaleMode = SKSceneScaleMode.ResizeFill
-        
         self.anchorPoint = CGPointMake(0,0)
+        
+        
         //SKSpriteNode(imageNamed:"grass")
         
         var sceneMap: Map
@@ -37,7 +40,12 @@ class GameScene: SKScene {
             CGRectGetMinY(self.frame) + CGFloat(tileSize/2) + CGFloat(tileSize * planeY)
         )
         self.addChild(plane)
-
+        
+        test2.alpha = CGFloat(0)
+        test2.zPosition = 1
+        plane.zPosition = 2
+        self.addChild(test2)
+        
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
@@ -58,6 +66,9 @@ class GameScene: SKScene {
             } else if (point.y > plane.position.y+plane.size.height) {
                 ++self.planeY
             }
+            
+            test2.alpha = CGFloat(0.1)
+            test2.position = point
 //
             plane.position = CGPointMake(
                 CGRectGetMinX(self.frame) + CGFloat(tileSize/2) + CGFloat(tileSize * planeX),
